@@ -34,25 +34,30 @@
           },
           "mappings": [],
           "thresholds": {
-            "mode": "absolute",
+            "mode": "percentage",
             "steps": [
               {
-                "color": "green",
+                "color": "red",
                 "value": null
               },
               {
-                "color": "red",
+                "color": "orange",
                 "value": 80
+              },
+              {
+                "color": "green",
+                "value": 85
               }
             ]
           },
+          "unit": "percentunit",
           "unitScale": true
         },
         "overrides": []
       },
       "gridPos": {
         "h": 8,
-        "w": 12,
+        "w": 5,
         "x": 0,
         "y": 0
       },
@@ -252,8 +257,8 @@
       },
       "gridPos": {
         "h": 8,
-        "w": 12,
-        "x": 12,
+        "w": 18,
+        "x": 5,
         "y": 0
       },
       "id": 7,
@@ -549,25 +554,30 @@
           },
           "mappings": [],
           "thresholds": {
-            "mode": "absolute",
+            "mode": "percentage",
             "steps": [
               {
-                "color": "green",
+                "color": "red",
                 "value": null
               },
               {
-                "color": "red",
-                "value": 80
+                "color": "orange",
+                "value": 65
+              },
+              {
+                "color": "green",
+                "value": 75
               }
             ]
           },
+          "unit": "percentunit",
           "unitScale": true
         },
         "overrides": []
       },
       "gridPos": {
         "h": 8,
-        "w": 12,
+        "w": 5,
         "x": 0,
         "y": 8
       },
@@ -742,8 +752,8 @@
       },
       "gridPos": {
         "h": 8,
-        "w": 12,
-        "x": 12,
+        "w": 18,
+        "x": 5,
         "y": 8
       },
       "id": 6,
@@ -952,25 +962,30 @@
           },
           "mappings": [],
           "thresholds": {
-            "mode": "absolute",
+            "mode": "percentage",
             "steps": [
               {
-                "color": "green",
+                "color": "red",
                 "value": null
               },
               {
-                "color": "red",
+                "color": "orange",
                 "value": 80
+              },
+              {
+                "color": "green",
+                "value": 90
               }
             ]
           },
+          "unit": "percentunit",
           "unitScale": true
         },
         "overrides": []
       },
       "gridPos": {
         "h": 8,
-        "w": 12,
+        "w": 5,
         "x": 0,
         "y": 16
       },
@@ -1145,8 +1160,8 @@
       },
       "gridPos": {
         "h": 8,
-        "w": 12,
-        "x": 12,
+        "w": 18,
+        "x": 5,
         "y": 16
       },
       "id": 5,
@@ -1443,25 +1458,30 @@
           },
           "mappings": [],
           "thresholds": {
-            "mode": "absolute",
+            "mode": "percentage",
             "steps": [
               {
-                "color": "green",
+                "color": "red",
                 "value": null
               },
               {
-                "color": "red",
+                "color": "orange",
                 "value": 80
+              },
+              {
+                "color": "green",
+                "value": 90
               }
             ]
           },
+          "unit": "percentunit",
           "unitScale": true
         },
         "overrides": []
       },
       "gridPos": {
         "h": 8,
-        "w": 12,
+        "w": 5,
         "x": 0,
         "y": 24
       },
@@ -1637,8 +1657,8 @@
       },
       "gridPos": {
         "h": 8,
-        "w": 12,
-        "x": 12,
+        "w": 18,
+        "x": 5,
         "y": 24
       },
       "id": 2,
@@ -2226,9 +2246,9 @@
     "list": [
       {
         "current": {
-          "selected": false,
-          "text": "oslo",
-          "value": "oslo"
+          "selected": true,
+          "text": "kuala_lumpur",
+          "value": "kuala_lumpur"
         },
         "hide": 0,
         "includeAll": false,
@@ -2237,7 +2257,7 @@
         "name": "site",
         "options": [
           {
-            "selected": true,
+            "selected": false,
             "text": "oslo",
             "value": "oslo"
           },
@@ -2267,7 +2287,7 @@
             "value": "sao_paulo"
           },
           {
-            "selected": false,
+            "selected": true,
             "text": "kuala_lumpur",
             "value": "kuala_lumpur"
           },
@@ -2288,14 +2308,15 @@
           }
         ],
         "query": "oslo,hannover,nuremberg,marseille,houston,sao_paulo,kuala_lumpur,chicago,rotterdam,london",
+        "queryValue": "",
         "skipUrlSync": false,
         "type": "custom"
       },
       {
         "current": {
           "selected": true,
-          "text": "Moulding Line",
-          "value": "273934255052053"
+          "text": "Moulding Line O54",
+          "value": "5501272904950927"
         },
         "datasource": {
           "type": "cognitedata-datasource",
@@ -2325,7 +2346,7 @@
         "current": {
           "selected": false,
           "text": "Main Drive, Indexing Chain Conveyor",
-          "value": "836796888328649"
+          "value": "6170037916164619"
         },
         "datasource": {
           "type": "cognitedata-datasource",
@@ -2354,13 +2375,13 @@
     ]
   },
   "time": {
-    "from": "now-6h",
+    "from": "now-7d",
     "to": "now"
   },
   "timepicker": {},
   "timezone": "",
   "title": "My dashboard HE",
   "uid": "a7b53d09-33ca-4e61-94bc-1cec21e4dcff",
-  "version": 8,
+  "version": 9,
   "weekStart": ""
 }
